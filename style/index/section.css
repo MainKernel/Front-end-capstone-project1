@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('../../fonts/CooperHewitt-Thin.woff2') format('woff2'), url('../../fonts/CooperHewitt-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt Medium';
+    src: url('../..fonts/CooperHewitt-Medium.woff2') format('woff2'), url('../../fonts/CooperHewitt-Medium.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt Heavy';
+    src: url('../../fonts/CooperHewitt-Heavy.woff2') format('woff2'), url('../../fonts/CooperHewitt-Heavy.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+.join-us{
+   display: grid;
+   grid-template-columns: 1fr 4fr 1fr;
+   grid-template-rows: 1fr;
+}
+.main-container{
+    background-image: url('../../images/join_texture.jpg');
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+.inner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.inner-container > h2{
+    color:whitesmoke;
+    font-family: 'Cooper Hewitt Heavy';
+    font-size: 3rem;
+    grid-column: span 2;
+    text-align: center;
+}
+.inner-container > input{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+.inner-container > button{
+    margin: 2.4rem 1rem;
+    border-radius: 20%;
+    background-color: #9b31b0;
+    font-family: 'Cooper Hewitt Heavy';
+    font-size: 2rem;
+    color: #8bf007;
+    
+}
+@media (max-width: 760px){
+    .join-us{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+.inner-container {
+    
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .inner-container>h2 {
+        color: whitesmoke;
+        font-family: 'Cooper Hewitt Heavy';
+        font-size: 3rem;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: center;
+    }
+
+    .inner-container>input {
+        margin: 3rem;
+        text-align: center;
+        border-radius: 1rem;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        height: 2rem;
+    }
+
+    .inner-container>button {
+        margin: 3rem;
+        border-radius: 20%;
+        background-color: #9b31b0;
+        font-family: 'Cooper Hewitt Heavy';
+        font-size: 2rem;
+        color: #8bf007;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+    }
+
+}

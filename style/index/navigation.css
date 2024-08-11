@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('../../fonts/CooperHewitt-Thin.woff2') format('woff2'), url('../../fonts/CooperHewitt-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt Medium';
+    src: url('../..fonts/CooperHewitt-Medium.woff2') format('woff2'), url('../../fonts/CooperHewitt-Medium.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt Heavy';
+    src: url('../../fonts/CooperHewitt-Heavy.woff2') format('woff2'), url('../../fonts/CooperHewitt-Heavy.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+.navigation{
+  
+    border-top: 0.15rem solid black;
+    border-bottom: 0.2rem solid black;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.navigation > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 15fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+    list-style: none;
+    font-family: 'Cooper Hewitt Medium';
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 3rem;
+}
+.navigation > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+.navigation>ul>li>a:hover {
+    color: #333a49;
+}
+.navigation > ul > .account{
+    
+    grid-column-start: 5;
+   display: flex;
+   justify-content: end;
+   margin-right: 3rem;
+}
+
+@media (max-width: 445px){
+    .navigation>ul {
+        font-size: 1rem;
+            margin-left: 2px;
+    }
+}

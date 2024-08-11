@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('../../fonts/CooperHewitt-Thin.woff2') format('woff2'), url('../../fonts/CooperHewitt-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt Medium';
+    src: url('../..fonts/CooperHewitt-Medium.woff2') format('woff2'), url('../../fonts/CooperHewitt-Medium.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt Heavy';
+    src: url('../../fonts/CooperHewitt-Heavy.woff2') format('woff2'), url('../../fonts/CooperHewitt-Heavy.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+.hero{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    
+    
+}
+
+.hero > p{
+    margin: 0px;
+    color: whitesmoke;
+    font-family: 'Cooper Hewitt Heavy';
+    font-size: 5em;
+    padding-top: px;
+    padding-left: 100px  ;
+}
+
+@media (max-width:800px) {
+    .hero {
+        margin: 0px;
+        padding: 0px;
+        background-image: url('../../images/hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+    }
+
+    .hero > p{
+    margin: 0px;
+    color: whitesmoke;
+    font-family: 'Cooper Hewitt Heavy';
+    font-size: 2em;
+    padding-top: 40px;
+    }
+}
